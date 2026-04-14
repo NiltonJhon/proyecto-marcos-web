@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      :root {
+        --bs-body-bg-orange: #fe8200;
+        --bs-body-bg-yellow: #fcde1d;
+      }
+
+      .bs-body-bg-override {
+        background-color: var(--bs-body-bg-orange) !important;
+      }
+
+      .bs-body-bg-override-yellow {
+        background-color: var(--bs-body-bg-yellow) !important;
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top bg-black text-white"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-4 text-white">Teleplus</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+
+    <img
+      src="/img/marron5-banner.jpg"
+      alt="Marron 5 banner"
+      class="d-block w-100 object-fit-cover"
+    />
+
+    <section class="bs-body-bg-override py-5 px-4">
+      <div class="container">
+        <p class="text-center border border-white text-white p-3">
+          La descarga de los E-tickets estará disponible desde 2 días antes de
+          la fecha de tu evento o función.
+        </p>
+      </div>
+    </section>
+
+    <section class="bs-body-bg-override-yellow">
+      <div class="container py-5">
+        <h2 class="text-center fw-bold pb-5">
+          Obtén tus tickets para ver a MAROON 5 en el Estadio Nacional
+        </h2>
+        <div class="mx-auto mb-5 container">
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+              <button class="btn btn-primary w-100 py-4">Preventa fans</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary w-100 py-4">
+                Preventa Interbank
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary w-100 py-4">Precio full</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary w-100 py-4">Conadis</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
