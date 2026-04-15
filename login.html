@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ticket Plus - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.jpeg" alt="Logo" height="100" />
+        </a>
+      </div>
+    </nav>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <div class="container-fluid">
+      <div class="row vh-100">
+        <!-- IZQUIERDA -->
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-center"
+        >
+          <!-- IDIOMA -->
+          <div class="mb-4">
+            <span class="lang active" onclick="setLanguage('es')">Español</span>
+            |
+            <span class="lang" onclick="setLanguage('en')">English</span>
+          </div>
+
+          <!-- FORMULARIO -->
+          <form id="loginForm" class="w-75">
+            <div class="mb-3">
+              <label id="label-email">Email</label>
+              <input
+                type="email"
+                id="input-email"
+                class="form-control"
+                placeholder="Ingresa tu email"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label id="label-password">Contraseña</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  id="input-password"
+                  class="form-control"
+                  placeholder="Contraseña"
+                />
+                <span class="input-group-text" onclick="togglePassword()">
+                  <i class="fa-regular fa-eye-slash" id="toggleIcon"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- ERROR -->
+            <div id="error-box" class="alert alert-danger d-none">
+              <p id="error-text" class="m-0"></p>
+            </div>
+
+            <!-- BOTÓN -->
+            <button
+              type="submit"
+              id="btn-login"
+              class="btn btn-outline-danger w-100 mb-3"
+            >
+              Ingresa
+            </button>
+
+            <hr />
+
+            <!-- LINKS -->
+            <div class="d-flex justify-content-between">
+              <a href="#" id="forgot">¿Olvidaste tu contraseña?</a>
+              <a href="registro.html" id="register"
+                >¿Aún no tienes cuenta? Regístrate</a
+              >
+            </div>
+          </form>
+        </div>
+
+        <!-- DERECHA-->
+        <div
+          class="col-md-6 d-none d-md-block"
+          style="
+            background: url(&quot;./img/logo-login.jpeg&quot;) center/cover;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <!--MODAL (VENTANA FLOTANTE) -->
+    <div class="modal fade" id="loginSuccessModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-4">
+          <h4>Bienvenido a Ticket Plus+ 🎉</h4>
+          <p>Login exitoso</p>
+          <button class="btn btn-success" onclick="goToHome()">
+            Continuar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+      Vive la música. Siente la experiencia. 🎶
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
