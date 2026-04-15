@@ -10,8 +10,7 @@ body {
 
 /* HERO */
 .seccion-principal {
-    background: url('https://cdn.teleticket.com.pe/especiales/megadeth-lima-2026/images/banner-megadeth.jpg') center/cover no-repeat;
-    min-height: 250vh;
+    min-height: 0vh;
     margin: 0;
     padding: 0;
 }
@@ -69,16 +68,30 @@ body {
 }
 
 .fila-precios {
-    display: flex;
-    gap: 12px;
-    align-items: stretch;
-    margin-bottom: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.fila-precios::-webkit-scrollbar {
+    height: 8px;
+}
+
+.fila-precios::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+}
+
+.fila-precios:hover {
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
 }
 
 .etiqueta-fila {
-    width: 140px;
+    min-height: 80px;
+    min-width: 180px;
+    padding: 0 1rem;
     background: transparent;
     color: #092950;
     display: flex;
@@ -95,7 +108,8 @@ body {
     padding: 12px 14px;
     text-align: center;
     border: 2px solid #1b263b;
-    min-width: 140px;
+    min-width: 160px;
+    min-height: 80px;
     box-sizing: border-box;
 }
 
@@ -112,9 +126,9 @@ body {
 }
 
 .destacado {
-    background: #ffd600;
-    color: #07101a;
-    border-color: #ffd600;
+    background: #074b01;
+    color: #ffffff;
+    border-color: #44ff00;
 }
 
 .descripcion {
@@ -128,4 +142,15 @@ body {
              background: #000;
              text-align: center;
              padding: 20px;
+         }
+         .img-footer {
+             max-width: 150px;
+             height: auto;
+         }
+         section{
+            background-color: #FDE000;
+                color: #000;
+         }
+         p{
+            color: #fff;
          }

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Información - Nosotros</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #f8f9fa;
+        color: #222;
+      }
+      .hero-nosotros {
+        background: linear-gradient(135deg, #3f2b83 0%, #b30b2f 100%);
+        color: white;
+        padding: 4rem 0;
+      }
+      .hero-nosotros h1 {
+        font-weight: 800;
+      }
+      .tab-pane {
+        min-height: 240px;
+      }
+      .card-nosotros {
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 18px 45px rgba(47, 47, 79, 0.12);
+      }
+      .imagen-nosotros {
+        min-height: 320px;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+      @media (max-width: 767px) {
+        .hero-nosotros {
+          padding: 3rem 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Teleticket</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+          aria-controls="menuNavbar"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#plataformas">Plataformas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-nosotros text-center">
+      <div class="container">
+        <h1>Nosotros</h1>
+        <p class="lead mt-3">
+          Conoce quiénes somos, nuestra cultura, servicios y valores en una sección
+          móvil, moderna y totalmente responsive.
+        </p>
+      </div>
+    </section>
+
+    <section class="container my-5" id="nosotros">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="card card-nosotros p-4 h-100">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-4 gap-3">
+              <div>
+                <h2 class="h4 mb-1">Nuestra historia</h2>
+                <small class="text-muted">Explora cada área con el cursor o deja que avance sola.</small>
+              </div>
+              <span class="badge bg-primary fs-6">4 pestañas dinámicas</span>
+            </div>
+
+            <ul class="nav nav-pills mb-4 flex-column flex-sm-row" id="nosotrosTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="quienes-tab" data-bs-toggle="tab" data-bs-target="#quienes" type="button" role="tab" aria-controls="quienes" aria-selected="true">
+                  Quiénes somos
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valores-tab" data-bs-toggle="tab" data-bs-target="#valores" type="button" role="tab" aria-controls="valores" aria-selected="false">
+                  Valores
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="plataformas-tab" data-bs-toggle="tab" data-bs-target="#plataformas" type="button" role="tab" aria-controls="plataformas" aria-selected="false">
+                  Plataformas
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="impacto-tab" data-bs-toggle="tab" data-bs-target="#impacto" type="button" role="tab" aria-controls="impacto" aria-selected="false">
+                  Impacto
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="nosotrosTabContent">
+              <div class="tab-pane fade show active" id="quienes" role="tabpanel" aria-labelledby="quienes-tab">
+                <h3>Somos Teleticket</h3>
+                <p>
+                  Una empresa apasionada por conectar personas con eventos, artistas y experiencias memorables.
+                  Cada día trabajamos para que disfrutes tus momentos de forma fácil y segura.
+                </p>
+                <ul>
+                  <li>Más de 10 años en el mercado.</li>
+                  <li>Soporte cercano y confiable.</li>
+                  <li>Soluciones digitales para todo tipo de evento.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="valores" role="tabpanel" aria-labelledby="valores-tab">
+                <h3>Valores</h3>
+                <p>
+                  La confianza, la innovación y la cercanía con nuestros clientes son la base de todo lo que hacemos.
+                  Creemos en la transparencia y el respeto como pilares de nuestra cultura.
+                </p>
+                <ul>
+                  <li>Innovación constante.</li>
+                  <li>Atención humana.</li>
+                  <li>Trabajo en equipo.</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="plataformas" role="tabpanel" aria-labelledby="plataformas-tab">
+                <h3>Nuestras plataformas</h3>
+                <p>
+                  Ofrecemos soluciones de ticketing, streaming, marketplace y agendamiento para crear experiencias completas.
+                </p>
+                <ul>
+                  <li>TLK Ticketing</li>
+                  <li>TLK Meet</li>
+                  <li>TLK Play</li>
+                  <li>TLK Store</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="impacto" role="tabpanel" aria-labelledby="impacto-tab">
+                <h3>Impacto</h3>
+                <p>
+                  Ayudamos a artistas, organizadores y fans a encontrarse de forma sencilla.
+                  Nuestro objetivo es que cada evento sea una experiencia única para todos.
+                </p>
+                <ul>
+                  <li>Más de 50.000 entradas vendidas.</li>
+                  <li>Eventos seguros y entretenidos.</li>
+                  <li>Crecimiento para emprendedores culturales.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card card-nosotros overflow-hidden h-100">
+            <img
+              src="/img/nosotros-placeholder.jpg"
+              alt="Imagen de nosotros - reemplazar en /img"
+              class="img-fluid imagen-nosotros"
+            />
+            <div class="card-body">
+              <h3 class="h5">Espacio para tu imagen</h3>
+              <p class="mb-0 text-muted">
+                Cambia esta imagen por la que desees dentro de la carpeta <code>/img</code>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-0">Teleticket | Información y sección de nosotros responsive</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const tabButtons = document.querySelectorAll('#nosotrosTab button[data-bs-toggle="tab"]');
+        let activeIndex = 0;
+        const delay = 6000;
+
+        function showTab(index) {
+          const button = tabButtons[index];
+          const tab = new bootstrap.Tab(button);
+          tab.show();
+          activeIndex = index;
+        }
+
+        tabButtons.forEach((button, index) => {
+          button.addEventListener('mouseover', () => showTab(index));
+          button.addEventListener('click', () => showTab(index));
+        });
+
+        setInterval(() => {
+          const nextIndex = (activeIndex + 1) % tabButtons.length;
+          showTab(nextIndex);
+        }, delay);
+      });
+    </script>
+  </body>
+</html>
