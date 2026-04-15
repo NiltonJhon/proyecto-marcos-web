@@ -1,0 +1,61 @@
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none ;
+    box-shadow: none ;
+    border: none ;
+}
+.card img{
+    height: 150px;
+    object-fit: cover;
+    border-radius:10px;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+footer{
+    background-color: #212529;
+    color: white;
+    text-align: center; 
+    padding: 15px;
+}
+#GG{
+    padding: 0;
+    width: max-content;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem ;
+}
+footer .border-top {
+    border-color: #333 ;
+}
+
+footer a:hover {
+    color: #0d6efd ;
+}
+
+.hero img {
+    width: 100vw; 
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+@media (min-width: 500px) {
+    .row-cols-md-3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row-cols-md-3 > .col {
+        flex: 0 0 auto;
+        width: 50% !important; 
+    }
+}
+@media (min-width: 800px) {
+    .row-cols-md-3 > .col {
+        width: 33.333% !important; 
+    }
+}
