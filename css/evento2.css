@@ -10,22 +10,20 @@ body {
 
 /* HERO*/
 .seccion-principal {
-  background: url("https://cdn.teleticket.com.pe/especiales/mac-demarco-2026/images/fondo-evento-2.jpg")
-    center/cover no-repeat;
-  min-height: 250vh;
+  min-height: 0vh;
   margin: 0;
   padding: 0;
 }
 
 /* FONDO */
 .campo-escenario {
-  background-color: #081020;
+  background-color: #f0aa1d;
   padding-top: 0;
 }
 
 /* CONTENEDOR */
 .contenedor-escenario {
-  background: #07101a;
+  background: #f0aa1d;
   padding-bottom: 0;
 }
 
@@ -36,12 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  background: linear-gradient(
-    to top,
-    rgba(7, 16, 26, 1) 0%,
-    rgba(7, 16, 26, 0.6) 40%,
-    rgba(7, 16, 26, 0) 100%
-  );
+  background: linear-gradient(to top, #f0aa1d 0%, #f0aa1d 40%, #f0aa1d 100%);
 }
 
 /* MAPA */
@@ -54,7 +47,7 @@ body {
 
 .imagen-mapa {
   display: block;
-  width: 320px;
+  width: 400px;
   max-width: 100%;
   margin: 0 auto 8px auto;
 }

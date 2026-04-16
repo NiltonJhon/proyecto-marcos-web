@@ -14,83 +14,118 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand text-white" href="#">Ticket +</a>
-        <div class="d-flex gap-3">
-          <div class="d-inline-block" style="width: 50px">NOSE1</div>
-          <div class="d-inline-block" style="width: 50px">NOSE2</div>
-          <div class="d-inline-block" style="width: 50px">NOSE3</div>
-          <div class="d-inline-block" style="width: 50px">NOSE4</div>
+        <a class="navbar-brand" href="#">Ticket +</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+          aria-controls="menuNavbar"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/compras.html">Compras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/informacion.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/registro.html">Registrar</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <!-- HERO -->
-    <section class="seccion-principal"></section>
+    <section class="seccion-principal">
+      <img
+        src="https://cdn.teleticket.com.pe/especiales/mac-demarco-2026/images/fondo-evento-2.jpg"
+        alt="Banner Evento 2"
+        class="hero-image img-fluid"
+      />
+    </section>
 
     <!-- ESCENARIO + PRECIOS -->
     <div class="campo-escenario">
-      <div class="contenedor-escenario">
-        <div class="escenario">
-          <div class="mapa">
+      <div class="container">
+        <div class="row">
+          <div class="escenario col-lg-6 col-12" aria-hidden="true">
+            <div class="mapa">
             <img
-              class="imagen-mapa"
+              class="imagen-mapa img-fluid"
               src="https://cdn.teleticket.com.pe/especiales/mac-demarco-2026/images/mapa-2.png"
               alt="Mapa del escenario"
             />
           </div>
         </div>
 
-        <div class="caja-boletos">
-          <div class="tabla-precios">
+          <div class="caja-boletos col-lg-6 col-12">
+            <div class="tabla-precios">
             <!-- CAMPO A -->
-            <div class="fila-precios">
-              <div class="bg-warning etiqueta-fila">VIP</div>
+            <div class="fila-precios rounded shadow-sm bg-dark p-3 overflow-auto">
+              <div class="d-flex align-items-center justify-content-center flex-nowrap gap-2">
+              <div class="bg-white text-dark etiqueta-fila flex-shrink-0">VIP</div>
 
-              <div class="celda-precio">
+              <div class="celda-precio flex-shrink-0">
                 <div class="etiqueta">PREVENTA FANS</div>
                 <div class="precio">S/ 450.00</div>
               </div>
 
-              <div class="celda-precio destacado">
+              <div class="celda-precio destacado flex-shrink-0">
                 <div class="etiqueta">PREVENTA INTERBANK</div>
                 <div class="precio">S/ 390.00</div>
               </div>
 
-              <div class="celda-precio">
+              <div class="celda-precio flex-shrink-0">
                 <div class="etiqueta">PRECIO FULL</div>
                 <div class="precio">S/ 450.00</div>
               </div>
 
-              <div class="celda-precio">
+              <div class="celda-precio flex-shrink-0">
                 <div class="etiqueta">CONADIS</div>
                 <div class="precio">S/ 360.00</div>
+              </div>
               </div>
             </div>
 
             <!-- CAMPO B -->
-            <div class="fila-precios">
-              <div class="bg-warning etiqueta-fila">GENERAL</div>
+            <div class="fila-precios rounded shadow-sm bg-dark p-3 overflow-auto">
+              <div class="d-flex align-items-center justify-content-center flex-nowrap gap-2">
+              <div class="bg-warning etiqueta-fila flex-shrink-0">GENERAL</div>
 
-              <div class="celda-precio">
+              <div class="celda-precio flex-shrink-0">
                 <div class="etiqueta">PREVENTA FANS</div>
                 <div class="precio">S/ 220.00</div>
               </div>
 
-              <div class="celda-precio destacado">
+              <div class="celda-precio destacado flex-shrink-0">
                 <div class="etiqueta">PREVENTA INTERBANK</div>
                 <div class="precio">S/ 180.00</div>
               </div>
 
-              <div class="celda-precio">
+              <div class="celda-precio flex-shrink-0">
                 <div class="etiqueta">PRECIO FULL</div>
                 <div class="precio">S/ 220.00</div>
               </div>
 
-              <div class="celda-precio">
+              <div class="celda-precio flex-shrink-0">
                 <div class="etiqueta">CONADIS</div>
                 <div class="precio">—</div>
+              </div>
               </div>
             </div>
           </div>
@@ -99,51 +134,62 @@
     </div>
 
     <!-- BOTONES -->
-    <section class="container text-center mb-5">
-      <h3 class="mb-4">Obtén tus tickets para ver a Mac Demarco</h3>
+    <section class="py-5 mt-5">
+  <div class="container text-center">
+    <h3 class="mb-5 fw-bold">
+      Obtén tus tickets para ver a MAC DEMARCO en Costa21
+    </h3>
 
-      <!-- IMPORTANTE: conectados a tu compra.html -->
-      <form action="compra.html" method="get">
-        <input type="hidden" name="evento" value="Mac Demarco" />
-        <input type="hidden" name="fecha" value="24 Abril 2026" />
-        <input type="hidden" name="lugar" value="Costa 21" />
-        <input type="hidden" name="zona" value="VIP" />
-        <input type="hidden" name="tipo" value="Preventa Fans" />
-        <input type="hidden" name="precio" value="450" />
-
-        <button class="btn btn-dark w-100 mb-3 fw-bold">PREVENTA FANS</button>
-      </form>
-
-      <form action="compra.html" method="get">
-        <input type="hidden" name="evento" value="Mac Demarco" />
-        <input type="hidden" name="fecha" value="24 Abril 2026" />
-        <input type="hidden" name="lugar" value="Costa 21" />
-        <input type="hidden" name="zona" value="VIP" />
-        <input type="hidden" name="tipo" value="Preventa Interbank" />
-        <input type="hidden" name="precio" value="390" />
-
-        <button class="btn btn-danger w-100 mb-3 fw-bold">
-          PREVENTA INTERBANK
+    <div class="row g-3"> <div class="col-md-6">
+        <button class="btn btn-dark w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #212529;">
+          <i class="bi bi-ticket-perforated"></i> PREVENTA FANS
         </button>
-      </form>
+      </div>
 
-      <button class="btn btn-danger w-100 mb-3 fw-bold">PRECIO FULL</button>
-      <button class="btn btn-dark w-100 mb-3 fw-bold">CONADIS</button>
+      <div class="col-md-6">
+        <form action="/compras.html" method="get">
+          <button type="submit" class="btn btn-danger w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #ff1c3d;">
+            <i class="bi bi-ticket-perforated"></i> PREVENTA INTERBANK
+          </button>
+        </form>
+      </div>
 
-      <small>¿Cómo comprar en la web?</small>
-    </section>
+      <div class="col-md-6">
+        <button class="btn btn-danger w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #ff1c3d;">
+          <i class="bi bi-ticket-perforated"></i> PRECIO FULL
+        </button>
+      </div>
+
+      <div class="col-md-6">
+        <button class="btn btn-dark w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #212529;">
+          <i class="bi bi-person-badge"></i> CONADIS
+        </button>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <small class="text-white">
+        <i class="bi bi-info-circle"></i> ¿Cómo comprar en la web?
+      </small>
+    </div>
+  </div>
+</section>
 
     <!-- DESCRIPCIÓN -->
-    <section class="descripcion bg-dark py-5 text-center">
+    <section class="descripcion bg-warning py-5 text-center">
+      <img src="https://cdn.teleticket.com.pe/especiales/mac-demarco-2026/images/disco-imagen.jpg" alt="macDemarcoProfile" class="mb-3 img-fluid" />
+      <img src="https://cdn.teleticket.com.pe/especiales/mac-demarco-2026/images/homenaje.png" alt="macDemarcoLogo" class="mb-3 img-fluid" />
+      
       <p>
         Mac DeMarco, uno de los exponentes más importantes del indie mundial,
         regresa Lima el próximo 24 de abril como parte del ciclo Indiegentes
         2026 de Veltrac Music.
       </p>
+      
     </section>
 
     <!-- FOOTER -->
-    <footer class="pie bg-black text-center py-4">
+    <footer class="pie bg-warning text-center py-4">
       <img
         src="/img/logo sin fondo.png"
         alt=""
@@ -152,5 +198,6 @@
         width="400"
       />
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
