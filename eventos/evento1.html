@@ -102,36 +102,67 @@
     </div>
 
     <!-- BOTONES -->
-    <section class="bg-warning-subtle py-5 mt-5">
-      <div class="container text-center">
-        <h3 class="mb-4 text-dark">Obtén tus tickets para ver a MEGADETH</h3>
+    <section class="py-5 mt-5">
+  <div class="container text-center">
+    <h3 class="mb-5 text-dark fw-bold">
+      Obtén tus tickets para ver a MEGADETH en costa 21
+    </h3>
 
-        <button class="btn btn-dark w-100 mb-3 fw-bold">PREVENTA FANS</button>
-      <form action="/compras.html" method="get">
-        <button type="submit" class="btn btn-danger w-100 mb-3 fw-bold">
-          PREVENTA INTERBANK
+    <div class="row g-3"> <div class="col-md-6">
+        <button class="btn btn-dark w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #212529;">
+          <i class="bi bi-ticket-perforated"></i> PREVENTA FANS
         </button>
-      </form>
-      <button class="btn btn-danger w-100 mb-3 fw-bold">PRECIO FULL</button>
-      <button class="btn btn-dark w-100 mb-3 fw-bold">CONADIS</button>
-
-      <small>¿Cómo comprar en la web?</small>
       </div>
-    </section>
+
+      <div class="col-md-6">
+        <form action="/compras.html" method="get">
+          <button type="submit" class="btn btn-danger w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #ff1c3d;">
+            <i class="bi bi-ticket-perforated"></i> PREVENTA INTERBANK
+          </button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <button class="btn btn-danger w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #ff1c3d;">
+          <i class="bi bi-ticket-perforated"></i> PRECIO FULL
+        </button>
+      </div>
+
+      <div class="col-md-6">
+        <button class="btn btn-dark w-100 py-3 fw-bold border-0 shadow-sm" style="border-radius: 12px; background-color: #212529;">
+          <i class="bi bi-person-badge"></i> CONADIS
+        </button>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <small class="text-dark">
+        <i class="bi bi-info-circle"></i> ¿Cómo comprar en la web?
+      </small>
+    </div>
+  </div>
+</section>
 
     <!-- DESCRIPCION -->
     <section class="descripcion bg-dark py-5 text-center">
-      <img src="200x100" alt="Megadeth" class="mb-3 img-fluid" />
+      <img src="/img/logo-evento1.png" alt="Megadeth" class="mb-3 img-fluid" />
 
-      <p>
+      <p class="text-center mx-auto w-75 w-md-50">
         Los íconos del thrash metal, <strong>Megadeth</strong>, llegan a Perú.
         Será un espectáculo inolvidable recorriendo décadas de carrera.
+        Bajo el liderazgo del legendario Dave Mustaine, la banda interpretará clásicos inmortales como <strong>“Symphony of Destruction”</strong>, <strong>“Peace Sells”</strong>, <strong>“Hangar 18”</strong> y <strong>“Holy Wars… The Punishment Due”</strong>, junto con material de su más reciente álbum The Sick, The Dying… and The Dead! (2022), aclamado por la crítica y los fanáticos.
       </p>
     </section>
 
     <!-- FOOTER -->
     <footer class="pie bg-black text-center py-4">
-      <img src="150x50" alt="Ticketera" class="img-fluid" />
+      <div class="container py-1 text-center">
+        <img
+          src="/img/logo sin fondo.png"
+          alt=""
+          class="img-fluid img-footer"
+        />
+      </div>
     </footer>
 
     <script
