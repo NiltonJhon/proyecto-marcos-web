@@ -1,0 +1,123 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #000 !important;
+}
+
+.seccion-principal {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  display: block;
+}
+
+.campo-escenario {
+  background-color: #081020;
+  padding: 40px 0;
+}
+
+.contenedor-escenario {
+  background: #07101a;
+  padding-bottom: 20px;
+}
+
+.mapa {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.imagen-mapa {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.5));
+}
+
+.tabla-zona {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #0d0628;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.border-custom {
+  border-bottom: 1px solid #00ff4c !important; 
+}
+
+.bg-celeste {
+  background-color: #55cdff !important;
+  color: #000 !important;
+  transition: all 0.3s ease;
+}
+
+.bg-celeste:hover {
+  background-color: #ffff00 !important; 
+  color: #000 !important;
+  cursor: pointer;
+}
+
+.dot {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.text-warning-custom {
+  color: #ffc107;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.h4, .h5, .h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.border-warning {
+  border-color: #ffc107 !important;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btn-info.bg-celeste {
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-info.bg-celeste:hover {
+  background-color: #ffff00 !important;
+  transform: translateY(-2px);
+}
+
+.descripcion {
+  background: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pie {
+  background: #000;
+  text-align: center;
+  padding: 30px;
+}
+
+.img-footer {
+  max-height: 80px;
+  width: auto;
+}
